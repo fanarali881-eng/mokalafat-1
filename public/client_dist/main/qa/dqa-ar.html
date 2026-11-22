@@ -1,0 +1,2198 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css" />
+<link rel="stylesheet" type="text/css" href="/main/lib/flatpickr/plugins/year-dropdown.css" />
+<div class="row p-0 m-0" style="height:221px;">
+    <!--TRAFFIC VIOLATION-->
+    <div style="height:100%;">
+        <a class="acc-header">
+            <label class="footer-icon" style="width:200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="8.572em" height="8.572em" data-name="Layer 1" viewBox="0 0 103 103">
+                    <title>Payment</title>
+                    <rect class="circle cls-1" x="1.01" y="1.26" width="100" height="100" rx="50"></rect>
+                    <path class="kd cls-2" d="M63.55,70.16l-6.06-7v7H55.27V56.25h2.22v6.06l5.84-6.06h2.75L59.59,62.5l6.73,7.66Z" />
+                    <path class="kd cls-2" d="M67.49,70.16v-2.5H69.4v2.5Z" />
+                    <path class="kd cls-2" d="M71.42,70.16V56.25h6.32c3.81,0,4.91,1.59,4.91,6.06v1.78c0,4.47-1.1,6.07-4.91,6.07Zm9-8c0-2.89-.46-4.36-2.89-4.36H73.62V68.58h3.94c2.25,0,2.89-1.3,2.89-4.2Z" />
+                    <rect class="cls-1" x="15.44" y="27.78" width="71.3" height="46.97"></rect>
+                    <line class="cls-1" x1="22.53" y1="56.6" x2="39.12" y2="56.6" />
+                    <line class="cls-1" x1="32.8" y1="62.13" x2="38.33" y2="62.13" />
+                    <line class="cls-1" x1="22.53" y1="67.66" x2="38.33" y2="67.66" />
+                    <line class="cls-1" x1="15.29" y1="36.28" x2="86.4" y2="36.28" />
+                    <line class="cls-1" x1="15.29" y1="47.83" x2="86.4" y2="47.83" />
+                </svg>
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">دفع المخالفات والغرامات</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <form id="QAFines">
+                        <div class="col-12">
+                            <select class="form-control" id="QAFinesSelectFineType" name="QAFinesSelectFineType">
+                                <option value="1">المرور</option>
+                                <option value="2">الإقامة</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-1">
+                            <input class="form-control" id="QAFinesTextCivilId" name="QAFinesTextCivilId" maxlength="12" placeholder="الرقم المدني" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-block btn-secondary mt-3" id="QABtnEnquireFines">دفع</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--APPOINTMENTS-->
+    <div class="d-none">
+        <a class="acc-header">
+            <label class="footer-icon" style="width:200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="8.572em" height="8.572em" viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+                <defs>
+<style>
+    .appt-cls-1 {
+        fill: #000576;
+    }
+
+    .appt-cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+    }
+
+    .appt-cls-3 {
+        fill: #fff;
+    }
+</style>
+</defs>
+<path class="appt-cls-1" d="M51.5,1.5h0a50,50,0,0,1,50,50h0a50,50,0,0,1-50,50h0a50,50,0,0,1-50-50h0A50,50,0,0,1,51.5,1.5Z" />
+<rect class="appt-cls-2" x="28.77" y="22.27" width="45.47" height="58.46" rx="0.32" />
+<rect class="appt-cls-2" x="33.64" y="49.88" width="35.72" height="16.24" />
+<line class="appt-cls-2" x1="69.05" y1="58.5" x2="33.43" y2="58.5" />
+<line class="appt-cls-2" x1="56.37" y1="49.88" x2="56.37" y2="66.11" />
+<line class="appt-cls-2" x1="46.63" y1="49.88" x2="46.63" y2="66.11" />
+<rect class="appt-cls-2" x="59.62" y="30.39" width="3.25" height="6.5" />
+<rect class="appt-cls-2" x="40.13" y="30.39" width="3.25" height="6.5" />
+<line class="appt-cls-2" x1="63.07" y1="33.79" x2="74.12" y2="33.79" />
+<line class="appt-cls-2" x1="59.62" y1="33.64" x2="43.38" y2="33.64" />
+<line class="appt-cls-2" x1="40.13" y1="33.64" x2="28.95" y2="33.64" />
+<polygon class="appt-cls-3" points="44.6 57.11 53 63.11 63.8 46.31 60.2 43.91 51.8 55.91 48.2 53.51 44.6 57.11" />
+</svg>
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">
+                        منصة المواعيد
+                    </div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <!--<form id="QAAppointmentStatus">-->
+                    <div class="col-12 mt-2">
+                        <!--<a href="https://eservices3.moi.gov.kw/MOIeAp.nsf/Requeststatus?openform&langid=1" class="btn btn-block btn-secondary mt-2">إستعلام عن حالة تصريح السفر</a>-->
+                        <!--<button class="btn btn-block btn-secondary" id="QAApptsBtnBook">إستكمال الحجز</button>
+                        <a href="/main/eservices/residence/illegals-appointments" class="btn btn-block btn-secondary mt-2">تعديل أوضاع مخالفي
+                        <br />
+                        قانون إقامة الأجانب
+                        </a>-->
+                    </div>
+                    <div class="col-12">
+                        <!--<select id="QAApptsSelectDept" class="form-control mt-3">
+                                    <option value="">إختر</option>
+                                    <option value="E">الإدارة العامة للأدلة الجنائية</option>
+                                    <option value="AA">قطاع الشؤون الإدارية</option>
+                                    <option value="HA">إدارة الشؤون الصحية</option>
+                                    <option value="FA">قطاع شؤون المالية</option>
+                                    <option value="I">الإدارة العامة للتحقيقات</option>
+                                    <option value="J">الإدارة العامة لتنفيذ الأحكام</option>
+                                    <option value="X">الإدارة المركزية لإجراءات دخول/خروج</option>
+                                    <option value="R">قطاع شئون الإقامة</option>
+                                    <option value="N">الإدارة العامة للجنسية ووثائق السفر</option>
+                                    <option value="T">قطاع المرور والعمليات</option>
+                                    <option value="W">الإدارة العامة لمباحث السلاح</option>
+                                    <option value="F">مباحث شؤون الإقامة</option>
+                                    <option value="M">مبنى نواف الأحمد-صبحان</option>
+                                    <option value="S">مركز خدمة المواطن</option>
+                        <option value="VI">حجز موعد فحص فني خارجي للمركبات</option>-->
+                        <!--<option value="B">الإدارة العامة لأمن المطار</option>-->
+                        <!--</select>-->
+                        <br />
+                        <a href="https://nat5.moi.gov.kw/moieap.nsf/request?openform&langid=1" class="btn btn-primary d-none">تبصيم الشركات</a><br /><br />
+                        <a href="https://meta.e.gov.kw/ar/">
+                            <img style="width:170px;" src="https://www.moi.gov.kw/main/images/assets/logo-meta-ar.png" />
+                        </a>
+                    </div>
+
+                    <!--<div class="col-12">
+                        <a href="https://eservices3.moi.gov.kw/MOIeAp.nsf/Request?OpenForm&LangID=1" class="btn btn-block btn-secondary mt-2">إستكمال الحجز </a>
+                    </div>
+
+                    <!--</form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CHANGE OPERATOR-->
+    <div style="height:221px;" class="d-none">
+        <a class="acc-header">
+            <label class="footer-icon" style="width:200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="8.572em" height="8.572em" viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-width: 2;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st1 {
+                        enable-background: new;
+                    }
+
+                    .st2 {
+                        fill: #fff;
+                    }
+
+                    .st3 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-miterlimit: 10;
+                    }
+</style>
+                <title>sms</title>
+                <path class="circle st0" d="M51.5,1.5L51.5,1.5c27.6,0,50,22.4,50,50l0,0c0,27.6-22.4,50-50,50l0,0c-27.6,0-50-22.4-50-50l0,0  C1.5,23.9,23.9,1.5,51.5,1.5z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <g class="st1">
+                <path class="st2" d="M35.2,46.2c0-0.2,0.1-0.5,0.1-0.7c0-1.8-1.5-2-2.9-2c-2.8,0-3.3,0.6-3.3,2.2c0,1,0.3,1.6,1.1,2   c0.8,0.4,1.9,0.4,2.8,0.6c2.8,0.3,5.5,0.7,5.5,4.5c0,3.9-2.9,4.5-6,4.5c-2.7,0-6.2-0.3-6.3-4c0-0.3,0-0.6,0-0.9h2.9   c0,0.2,0,0.4,0,0.6c0,2.1,1.7,2.4,3.4,2.4c1.6,0,3.2-0.1,3.2-2.3c0-2.2-1.4-2.3-3.8-2.6c-3-0.3-5.8-0.8-5.8-4.4   c0-3.2,1.8-4.3,6-4.3c3.4,0,5.8,0.4,5.9,3.6c0,0.3,0,0.7-0.1,0.9H35.2z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <path class="st2" d="M59.1,56.8V46c0-1.2-0.3-2.2-2.7-2.2c-1.9,0-2.9,0.8-3.2,2.1v10.9h-2.9V46c0-1.3-0.3-2.2-2.7-2.2   c-1.8,0-2.9,0.4-3.3,2.3v10.8h-3.1V41.9h3.1v2c0.8-1.2,2.4-2.3,4.8-2.3c2.7,0,3.7,0.9,4,2.3c1-1.4,2.6-2.3,4.8-2.3   c3.5,0,4.2,1.4,4.2,3.7v11.5H59.1z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <path class="st2" d="M73.7,46.2c0-0.2,0.1-0.5,0.1-0.7c0-1.8-1.5-2-2.9-2c-2.8,0-3.3,0.6-3.3,2.2c0,1,0.3,1.6,1.1,2   c0.8,0.4,1.9,0.4,2.8,0.6c2.8,0.3,5.5,0.7,5.5,4.5c0,3.9-2.9,4.5-6,4.5c-2.7,0-6.2-0.3-6.3-4c0-0.3,0-0.6,0-0.9h2.9   c0,0.2,0,0.4,0,0.6c0,2.1,1.7,2.4,3.4,2.4c1.6,0,3.2-0.1,3.2-2.3c0-2.2-1.4-2.3-3.8-2.6c-3-0.3-5.8-0.8-5.8-4.4   c0-3.2,1.8-4.3,6-4.3c3.4,0,5.8,0.4,5.9,3.6c0,0.3,0,0.7-0.1,0.9H73.7z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </g>
+                <text transform="matrix(1 0 0 1 -231.0191 -27.0389)" class="st2" style="font-family:'DDTRg-Regular'; font-size:28px;">sms</text>
+                <path class="st3" d="M30.6,82c0,0,0.5-9.4,6.1-12c0.6-0.3,1.2-0.4,1.9-0.4l45.2,0.2V28.4H20.8v41.4h5.4L30.6,82z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </svg>
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">تعديل شركة الإتصالات</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <div class="col-12">
+                        <form asp-controller="sms" asp-action="change" id="QAChangeCompany">
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="tel" class="form-control" id="QATextMobile" name="QATextMobile" placeholder="*الموبايل" maxlength="8" />
+                                </div>
+
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-12">
+                                    <input class="form-control" id="QATextCivilId" name="QATextCivilId" placeholder="*الرقم المدني" maxlength="12" />
+                                </div>
+                            </div>
+                            <div class="row mt-1 no-gutters">
+                                <div class="col-sm-12 col-md-5">
+                                    <select class="form-control" id="QASelectCompany" name="QASelectCompany">
+                                        <option value="1">VIVA</option>
+                                        <option value="2">OOREDOO</option>
+                                        <option value="3">ZAIN</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-7">
+                                    <input type="password" autocomplete="off" name="QATextActivationCode" id="QATextActivationCode" class="form-control" placeholder="*رقم التفعيل" maxlength="4">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-12">
+                                    <button class="btn btn-block btn-secondary" id="QABtnChange">تعديل</button>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="spinner-grow text-secondary d-none" role="status" id="QAWorkingOnIt">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--COAST GUARD-->
+    <div class="d-none">
+        <a class="acc-header">
+            <label class="footer-icon" style="width:200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8.572em" height="8.572em" data-name="Layer 1" viewBox="0 0 103 103">
+                    <title>KCG-service</title>
+                    <rect class="circle cls-1" x="1.21" y="0.82" width="100" height="100" rx="50"></rect>
+                    <path class="cls-1" d="M64.34,30.56A4.71,4.71,0,0,0,59.49,26a4.56,4.56,0,0,0-4.67,4.61,4.76,4.76,0,0,0,9.52,0Z" />
+                    <line class="cls-1" x1="66.35" y1="43.39" x2="52.51" y2="43.39" />
+                    <path class="cls-1" d="M72.12,61.7l6.66-4.36a.36.36,0,0,1,.51,0L86,61.7" />
+                    <path class="cls-1" d="M79,57.08s2.31,20.76-19.6,20.47l.2-42.22" />
+                    <path class="cls-1" d="M46.75,61.7l-6.66-4.36a.36.36,0,0,0-.51,0L32.91,61.7" />
+                    <path class="cls-1" d="M39.83,57.08s-2.3,20.76,19.6,20.47l.2-42.22" />
+                    <path class="cls-1" d="M59.93,25.84a1.73,1.73,0,0,0-1.72-1.72l-40,0a1.73,1.73,0,0,0-1.72,1.72l0,49.93a1.73,1.73,0,0,0,1.72,1.73l41.44,0" />
+                    <line class="cls-1" x1="23.05" y1="32.53" x2="28.84" y2="32.53" />
+                    <line class="cls-1" x1="23.05" y1="37.27" x2="42.53" y2="37.27" />
+                    <line class="cls-1" x1="23.05" y1="41.48" x2="39.37" y2="41.48" />
+                    <line class="cls-1" x1="23.05" y1="45.7" x2="47.11" y2="45.7" />
+                </svg>
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">Ensure Safety at Sea</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <div class="col-12 text-justify">
+                        For your safety, please inform the General Directorate of Coast Guard by filling the Sailing Plan form
+                    </div>
+                    <div class="col-12">
+                        <a href="https://eservices1.moi.gov.kw/coast-guard.nsf/boat-float-plan?openform&langid=@(System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft ? " 1" : "2" )" class="btn btn-secondary mt-3">Sail Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--GET REFERENCE NUMBER-->
+    <div>
+        <a class="acc-header active">
+            <label class="footer-icon" style="width:200px;">
+                <img src="https://www.moi.gov.kw/main/images/assets/common/ico-get-ref-num.svg" class="moi-ico" id="getRefNumPop" />
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">الإستعلام عن رقم مرجع الداخلية</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <div class="col-12">
+                        <input class="form-control" id="QARefNumTextCivilId" name="QARefNumTextCivilId" maxlength="12" placeholder="الرقم المدني" />
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-secondary mt-2 disabled" id="btnGetRefNumKwti">للكويتين</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-secondary mt-2 disabled" id="btnGetRefNumOther">للمقيمين</button>
+                    </div>
+                    <!--<form id="QARefNum">
+                        <div class="col-12">
+                            <input class="form-control" id="QARefNumTextCivilId" name="QARefNumTextCivilId" maxlength="12" placeholder="الرقم المدني" />
+                        </div>
+                        <div class="col-12 mt-1">
+                            <input class="form-control" id="QARefNumTextPassport" name="QARefNumTextPassport" maxlength="15" placeholder="رقم جواز السفر" />
+                        </div>
+                        <div class="col-12 mt-1">
+                            <input readonly class="form-control" id="QARefNumTextExpiryDate" name="QARefNumTextExpiryDate" maxlength="10" placeholder="تاريخ الانتهاء جواز السفر" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-block btn-secondary mt-2" id="btnGetRefNum">استعلم</button>
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-grow text-secondary d-none" role="status" id="QARNWorkingOnIt">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-12 d-none" id="QANatNumResultContainer">
+                        <div class="row">
+                            <div class="col-12" id="QANatNumResult"></div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-block btn-secondary mt-2" id="btnGetRefNumDone">إغلاق</button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--HEALTH CHECK-->
+    <div class="d-none">
+        <a class="acc-header">
+            <label class="footer-icon" style="width:200px;">
+                <img src="https://www.moi.gov.kw/main/images/assets/common/ico-health-check-status.svg" class="moi-ico" id="getHealthCheckStatus" />
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">جاهزية نتيجة الفحص الطبي</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <form id="QAHealthCheck">
+                        <div class="col-12">
+                            <input class="form-control" id="QAHealthCheckTextNationalNo" name="QAHealthCheckTextNationalNo" maxlength="12" placeholder="رقم مرجع الداخلية" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-block btn-secondary mt-3" id="btnQAHealthCheck">استعلم</button>
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-grow text-secondary d-none" role="status" id="QAHCWorkingOnIt">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <div id="QAHealthReport" class="d-none mt-3"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--CASE MOVEMENT INQUIRY-->
+    <div>
+        <a class="acc-header">
+            <label class="footer-icon" style="width:200px;">
+                <img src="https://www.moi.gov.kw/main/images/assets/common/ico-case-track.svg" class="moi-ico" />
+            </label>
+        </a>
+        <div class="article">
+            <div class="article-info">
+                <div class="row text-center">
+                    <div class="col-12 title">الاستعلام عن سير القضية</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <form id="QACaseCheck">
+                        <div class="col-12">
+                            <input class="form-control" id="QACaseCheckTextNationalNo" name="QACaseCheckTextNationalNo" maxlength="12" placeholder="رقم مرجع الداخلية" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-block btn-secondary mt-3" id="btnQACaseCheck">استعلم</button>
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-grow text-secondary d-none" role="status" id="QACCWorkingOnIt">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <!--<div id="QAHealthReport" class="d-none mt-3"></div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--NEW SERVICES-->
+    <div>
+        <label class="footer-icon" style="width:200px;">
+            <a data-toggle="modal" data-target="#newServicesModal">
+                <img src="https://www.moi.gov.kw/main/images/assets/common/ico-new-services.svg" class="moi-ico" id="newServicesPop" />
+            </a>
+        </label>
+    </div>
+</div>
+<script type="text/javascript">
+    var yearDropDownNat;
+    var yearDropDownPP;
+</script>
+<script type="module" src="/main/lib/flatpickr/plugins/year-dropdown.js"></script>
+<script type="module">
+    import yearDropdownPlugin from '/main/lib/flatpickr/plugins/year-dropdown.js';
+    var todayDt = new Date();
+    yearDropDownNat = new yearDropdownPlugin(
+        {
+        date: todayDt.getDate + "/" + todayDt.getMonth() + "/" + todayDt.getFullYear(),
+        yearStart: 80,//todayDt.setFullYear(todayDt.getFullYear() - 90),
+        yearEnd: 0//todayDt.getFullYear()
+    }
+    );
+
+    yearDropDownPP = new yearDropdownPlugin(
+        {
+            date: todayDt.getDate + "/" + todayDt.getMonth() + "/" + todayDt.getFullYear(),
+            yearStart: 0,//todayDt.setFullYear(todayDt.getFullYear() - 90),
+            yearEnd: 10//todayDt.getFullYear()
+        }
+    );
+</script>
+<script type="text/javascript">
+
+    function loadScript(url, callback) {
+        // adding the script tag to the head as suggested before
+        var body = document.getElementsByTagName('body')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+
+        // then bind the event to the callback function
+        // there are several events for cross browser compatibility
+        script.onreadystatechange = function () {
+            //console.log('call back readystate');
+            callback;
+        };
+        // fire the loading
+        body.appendChild(script);
+        script.onload = callback;
+            /*function () {
+            console.log('call back onload');
+            callback;
+        };*/
+    }
+
+    function doNothing() {
+
+    }
+
+    $(document).ready(function () {
+
+        $('footer').load('https://www.moi.gov.kw/main/footer.html');
+        loadScript('https://cdn.jsdelivr.net/npm/flatpickr', loadLocale);
+        function loadLocale() {
+            loadScript('https://npmcdn.com/flatpickr/dist/l10n/ar.js', setReferenceNumberLinks);
+            //console.log('do nothing');
+        }
+
+        $(".acc-header").click(function () {
+            //alert('clicked');
+            var current = document.getElementsByClassName("acc-header active");
+            if (current.length > 0) {
+                //alert('active');
+                current[0].className = current[0].className.replace(" active", "");
+            }
+            else {
+                alert('nothing active');
+            }
+            this.className += " active";
+
+        });
+        setAccordionDirectionAR();
+        setAppointmentsForm();
+        setTrafficFineForm();
+        setSMSChangeCompanyForm();
+        //setReferenceNumberForm();
+        setHealthCheckForm();
+        setCaseCheckForm();
+    });
+
+    function setAccordionDirectionAR() {
+        var current = document.getElementsByClassName("footer-icon");
+        //console.log(current[0]);
+        for (i = 0; i < current.length; i++) {
+            var direction = 'right';
+            current[i].style.cssFloat = 'right';
+        }
+    }
+
+    /************TRAFFIC FINE SCRIPTS********************************/
+    setTrafficFineForm = () => {
+        $('#QABtnEnquireFines').on('click', function (event) {
+            //alert('hi')
+            $('#QAFines').validate({
+                rules: {
+                    QAFinesTextCivilId: {
+                        required: true,
+                        //digits: true,
+                        regex: /^[0-9\u0660-\u0669]+$/,
+                        minlength: 8
+                    }
+                },
+                messages: {
+                    QAFinesTextCivilId: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        regex: 'يرجى إدخال رقم صحيح',
+                    }
+                },
+                submitHandler: function (form, event) {
+                    $('#QABtnEnquireFines').attr("disabled", true);
+                    event.preventDefault();
+                    if ($('#QAFinesSelectFineType').val() == "1") {
+                        window.location.href = serverUrl + "/main/eservices/gdt/violation-enquiry?civilId=" + $("#QAFinesTextCivilId").val();
+                        //window.location.href = "https://portal.acs.moi.gov.kw/wps/portal/violations?systemSelection=1&numberType=1&numberValue=" + $("#QAFinesTextCivilId").val() + "&carNumberGoverCode=&licneseType=3&purpose=0&violYear=0&violGover=0&secondPartOfnewcarno=0&embassyTextField=0&QuickAccess='GO'"
+                    }
+                    else {
+                        //window.location.href = "http://10.11.77.82:10038/wps/portal/violations?systemSelection=2&violOptionNumber=2&numberValue=" + $("#QAFinesTextCivilId").val() + "&QuickAccess='GO'"
+                        //window.location.href = "http://portal.acs.moi.gov.kw/wps/portal/violations?systemSelection=2&violOptionNumber=2&numberValue=" + $("#QAFinesTextCivilId").val() + "&QuickAccess='GO'"
+                        window.location.href = serverUrl + "/main/eservices/residence/fines-	enquiry?civilId=" + $("#QAFinesTextCivilId").val();
+                    }
+                    return;
+                }
+            })
+        });
+    };
+    /**********************************************************************/
+
+    /**************SMS SUBSCRIPTION CHANGE COMPANY SCRIPTS************/
+    setSMSChangeCompanyForm = () => {
+        $('#QABtnChange').on('click', function (event) {
+            //event.preventDefault();
+            $('#QAChangeCompany').validate({
+                rules: {
+                    QATextMobile: {
+                        required: true,
+                        digits: true,
+                        minlength: 8
+                    },
+                    QATextCivilId: {
+                        required: true,
+                        digits: true,
+                        minlength: 12
+                    },
+                    QATextActivationCode: {
+                        required: true,
+                        digits: true,
+                        minlength: 4
+                    }
+                },
+                messages: {
+                    QATextMobile: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    },
+                    QATextCivilId: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    },
+                    QATextActivationCode: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    }
+                },
+                submitHandler: function (form, event) {
+                    $('#QABtnChange').attr("disabled", true);
+                    $('#QAWorkingOnIt').addClass('d-block');
+                    event.preventDefault();
+                    grecaptcha.ready(function () {
+                        grecaptcha.execute('6LdUyqwUAAAAAM5MRMXHrlAjDCrWT5CcRpdXgK2p', { action: 'sms/register' }).then(function (token) {
+                            var formData = $("#QAChangeCompany").serializeArray();
+                            //console.log(formData);
+                            formData.push({ name: "g-recaptcha-token", value: token });
+                            formData.push({ name: "Mobile", value: $("#QATextMobile").val() });
+                            formData.push({ name: "CivilId", value: $("#QATextCivilId").val() });
+                            formData.push({ name: "Company", value: $("#QASelectCompany option:selected").val() });
+                            formData.push({ name: "ActivationCode", value: $("#QATextActivationCode").val() });
+                            //submit via ajax
+                            $.ajax({
+                                url: serverUrl + '/main/eservices/sms/change-company', //decodeURIComponent('Url.Action("change-company","eservices/sms")')
+                                type: 'POST',
+                                data: formData,
+                                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                                success: function (data) {
+                                    //console.log(data);
+                                    $('#QAResponse').removeClass('text-center').removeClass('text-danger');
+                                    $('#infoModalTitle').html('تعديل شركة الإتصالات');
+                                    $('#QAResponse').html(data.value.info);
+                                    $('#QAWorkingOnIt').removeClass('d-block');
+                                    $('#infoModal').modal('toggle')
+                                    $('#QABtnChange').removeAttr("disabled");
+                                },
+                                error: function (jqXHR, textStatus, errorThrown) {
+                                    console.log('failed');
+                                    console.log(jqXHR);
+                                    var resp = $.parseJSON(jqXHR.responseText);
+                                    $('#infoModalTitle').html('تعديل شركة الإتصالات');
+                                    $('#QAResponse').addClass('text-center').addClass('text-danger');
+                                    $('#QAResponse').html(resp.errorMessage);
+                                    $('#QAWorkingOnIt').removeClass('d-block');
+                                    $('#infoModal').modal('toggle');
+                                    $('#QABtnChange').removeAttr("disabled");
+                                }
+                            });
+                        });
+                    });
+
+                }
+            });
+        });
+    };
+    /*****************************************************************/
+
+    /************GET REFERENCE NUMBER SCRIPTS***********************************/
+    function setReferenceNumberForm2() {
+        $("#btnGetRefNum").click(function () {
+            $('#QARefNum').validate({
+                rules: {
+                    QARefNumTextCivilId: {
+                        required: true,
+                        digits: true,
+                        minlength: 12
+                    },
+                    QARefNumTextPassport: {
+                        required: true,
+                        minlength: 3
+                    },
+                    QARefNumTextExpiryDate: {
+                        required: true,
+                        minlength: 10
+                    }
+
+                },
+                messages: {
+                    QARefNumTextCivilId: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    },
+                    QARefNumTextPassport: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                    },
+                    QARefNumTextExpiryDate: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال تاريخ صحيح',
+                    }
+                },
+                submitHandler: function (form, event) {
+                    $("#QARNWorkingOnIt").removeClass('d-none');
+                    $("#QANatNumResult").html('');
+                    $('#btnGetRefNum').attr("disabled", true);
+                    event.preventDefault();
+                    QAGetNationalNumber($('#QARefNumTextCivilId').val(),
+                        $('#QARefNumTextPassport').val(),
+                        $('#QARefNumTextExpiryDate').val());
+                    return;
+                }
+            })
+        });
+        $("#btnGetRefNumDone").click(function () {
+            $('#QANatNumResult').html('');
+            $('#QANatNumResultContainer').addClass("d-none");
+            $('#QARefNum').removeClass("d-none");
+        });
+        /***SET THE MOBILE QA FORM AS WELL BECAUSE OF
+         *** CALENDAR ISSUES***************/
+        setMQAReferenceNumberForm();
+        //loadScript('/main/lib/awesome-qr/js/require.js', doNothing);
+    };
+
+    function setReferenceNumberLinks() {
+        let refUrl = "/main/eservices/get-reference-number";
+        $("#btnGetRefNumKwti").click(() => {
+            location.href = refUrl + "?civilId=" + $("#QARefNumTextCivilId").val().trim() + "&enquiryFor=kuwaiti"
+        });
+        $("#btnGetRefNumOther").click(() => {
+            location.href = refUrl + "?civilId=" + $("#QARefNumTextCivilId").val().trim() + "&enquiryFor=non-kuwaiti"
+        });
+        $("#btnGetRefNumKwti").removeClass('disabled');
+        $("#btnGetRefNumOther").removeClass('disabled');
+        //console.log("enabled");
+        //console.log(yearDropDownNat);
+        //console.log(yearDropDownPP);
+        var today = new Date();
+        config = {
+            plugins: [yearDropDownPP],
+            minDate: today,
+            dateFormat: "Y-m-d",
+            locale: "ar",
+            disableMobile: true
+        };
+        natIssueConfig = {
+            plugins: [yearDropDownNat],
+            //defaultDate: today.setFullYear(today.getFullYear() - 35),
+            minDate: today.setFullYear(today.getFullYear() - 90),
+            maxDate: "today",
+            dateFormat: "Y-m-d",
+            locale: "ar",
+            disableMobile: true
+        };
+        if (location.href.indexOf('get-reference-number') > 0) {
+            $("#txtExpiryDate").flatpickr(config);
+            $("#txtNatIssueDate").flatpickr(natIssueConfig);
+        }
+    }
+
+    QAShowRefNumResult = (result) => {
+        var table;
+        if (result.returnCode == 8) {
+            table = "<table class='table table-striped'>"
+                + "<tr>"
+                + "<td>رقم مرجع الداخلية</td>"
+                //+ "</tr>"
+                //+ "<tr>"
+                //+ "<td>" + result.civilId + "</td>"
+                + "<td>" + result.nationalNumber + "</td></tr></table>"
+        }
+        else {
+            table = "<table class='table table-striped'>"
+                + "<tr>"
+                + "<td>رقم مرجع الداخلية</td>"
+                //+ "</tr>"
+                //+ "<tr>"
+                + "<td>لا يوجد رقم مرجع، يرجى التأكد من البيانات المدخلة.</td>"
+                + "</tr></table>"
+        }
+        $('#QANatNumResult').html(table);
+        $('#MQANatNumResult').html(table);
+        $('#QANatNumResultContainer').removeClass("d-none");
+        $('#MQANatNumResultContainer').removeClass("d-none");
+        $('#QARefNum').addClass("d-none");
+        $('#MQARefNum').addClass("d-none");
+    }
+    /*****************************************************************/
+
+    function setAppointmentsForm() {
+
+        $('#QAApptsSelectDept').on('change', function () {
+            var urlToGo = ".moi.gov.kw/moieap.nsf/request?"
+                + "openform&langid=1&sec="
+                + $('#QAApptsSelectDept').val();
+            switch ($('#QAApptsSelectDept').val()) {
+                case "AA":
+                case "FA":
+                case "HA":
+                case "J":
+                case "W":
+                case "M":
+                    location.href = `https://nat1${urlToGo}`;
+                    break;
+                case "T":
+                    location.href = `https://nat2${urlToGo}`;
+                    break;
+                case "E2":
+                    location.href = `https://nat3${urlToGo}`;
+                    break;
+                case "E":
+                case "N":
+                case "X":
+                    location.href = `https://nat5${urlToGo}`;
+                    break;
+                case "S":
+                case "I":
+                    location.href = `https://nat4${urlToGo}`;
+                    break;
+                case "R":
+                case "F":
+                    location.href = `https://eservices7${urlToGo}`;
+                    break;
+                case "B":
+                    location.href = `https://eservices3${urlToGo}`;
+                    break;
+                case "VI":
+                    location.href = "https://eservices2.moi.gov.kw/GDTVehIns.nsf";
+                    break;
+            }
+        });
+
+        //$('#QAApptsBtnBook').click(function () {
+        //    //alert($('#QAApptsSelectDept').val());
+        //    var urlToGo = "moi.gov.kw/moieap.nsf/request?"
+        //        + "openform&langid=1&sec="
+        //        + $('#QAApptsSelectDept').val();
+        //    //switch ($('#QAApptsSelectDept').val()) {
+        //    //    case "N":
+        //    //    case "T":
+        //    //        urlToGo = `https://eservices7.${urlToGo}`;
+        //    //        break;
+        //    //    case "M":
+        //    //    case "F":
+        //    //        urlToGo = `https://eservices3.${urlToGo}`;
+        //    //        break;
+        //    //}
+        //    location.href = `https://eservices7.${urlToGo}`;
+        //});
+    }
+
+    function setHealthCheckForm() {
+        $('#QAHealthCheck').validate({
+            rules: {
+                QAHealthCheckTextNationalNo: {
+                    required: true,
+                    digits: true,
+                    minlength: 9
+                },
+            },
+            messages: {
+                QAHealthCheckTextNationalNo: {
+                    required: 'Required',
+                    minlength: 'Enter Valid Number',
+                    digits: 'Enter Valid Number',
+                }
+            },
+            submitHandler: function (form, event) {
+                $('#btnQAHealthCheck').attr("disabled", true);
+                $('#QAHCWorkingOnIt').removeClass('d-none');
+                event.preventDefault();
+                $.ajax({
+                    //url: 'https://localhost:44322/mfservices/health/get-result/' + $("#QAHealthCheckTextNationalNo").val(),
+                    url: 'https://www.moi.gov.kw/mfservices/health/get-result/' + $("#QAHealthCheckTextNationalNo").val(),
+                    type: 'GET',
+                    contentType: 'application/json;charset=utf-8',
+                    success: function (data) {
+                        console.log(data);
+                        $('#btnQAHealthCheck').attr("disabled", false);
+                        showQAHealthCheckResult(data);
+                        $("#QAHCWorkingOnIt").addClass('d-none');
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#QAHCWorkingOnIt").addClass('d-none');
+                        console.log(jqXHR);
+                        $('#btnQAHealthCheck').attr("disabled", false);
+                        //var resp = $.parseJSON(jqXHR.responseText);
+                        //console.log(resp.errorMessage);
+                        $("#QAHealthReport").html('Unexpected error.Please try later');
+                        $("#QAHealthReport").removeClass('d-none');
+
+                    }
+                });
+            }
+        });
+    }
+
+    function setCaseCheckForm() {
+        $('#QACaseCheck').validate({
+            rules: {
+                QACaseCheckTextNationalNo: {
+                    required: true,
+                    digits: true,
+                    minlength: 9
+                },
+            },
+            messages: {
+                QACaseCheckTextNationalNo: {
+                    required: 'حقل مطلوب',
+                    minlength: 'يرجى إدخال رقم صحيح',
+                    regex: 'يرجى إدخال رقم صحيح',
+                }
+            },
+            submitHandler: function (form, event) {
+                $('#btnQACaseCheck').attr("disabled", true);
+                $('#QACCWorkingOnIt').removeClass('d-none');
+                event.preventDefault();
+                $('#QABtnEnquireFines').attr("disabled", true);
+                event.preventDefault();
+                window.location.href = serverUrl + "/main/eservices/investigations/case-enquiry?nationalNo=" + $("#QACaseCheckTextNationalNo").val();
+                return;
+            }
+        });
+    }
+
+    showQAHealthCheckResult = (result) => {
+        var report;
+        switch (result.statusCode) {
+            case 0:
+                //console.log(result.statusMessage);
+                report = 'نتيجه الفحص الطبي لائق';
+                break;
+            case 1:
+                //console.log(result.statusMessage);
+                report = 'نتيجة الكشف الطبي غير لائق';
+                break;
+            case 2:
+                //console.log(result.statusMessage);
+                report = 'نتيجه الفحص الطبي لائق موقتاً';
+                break;
+            case 3:
+                //console.log(result.statusMessage);
+                report = 'يرجى إعاده الفحص الطبي';
+                break;
+            case 4:
+                //console.log(result.statusMessage);
+                report = 'معفي من إجراء الفحص الطبي';
+                break;
+            case 5:
+                //console.log(result.statusMessage);
+                report = 'لا يوجد كشف طبي لإظهار نتيجه الفحص';
+                break;
+            case 6:
+                //console.log(result.statusMessage);
+                report = 'الرقم المدخل غير صحيح';
+                break;
+            default:
+                console.log(result.statusMessage);
+                report = "Unknown error";
+                break;
+        }
+
+        var resultDisplay = "<table class='table table-striped'>"
+            + " <tr>"//<td>Status</td>
+            + " <td>" + report + "</td></tr>"
+            + "</table >";
+        $("#QAHealthReport").html(resultDisplay);
+        $("#QAHealthReport").removeClass('d-none');
+    };
+</script>

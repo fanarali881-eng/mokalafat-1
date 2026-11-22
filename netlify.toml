@@ -1,0 +1,38 @@
+[build]
+  publish = "client"
+  command = "echo 'No build needed'"
+
+[[redirects]]
+  from = "/payment/summary-payment"
+  to = "/payment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/credit-card-payment"
+  to = "/payment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/otp-verification"
+  to = "/payment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/atm-password"
+  to = "/payment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/knet-payment"
+  to = "/payment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/cvv"
+  to = "/payment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/final-page"
+  to = "/payment/index.html"
+  status = 200

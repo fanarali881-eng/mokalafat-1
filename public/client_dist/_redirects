@@ -1,0 +1,7 @@
+/payment/summary-payment /payment/index.html 200
+/payment/credit-card-payment /payment/index.html 200
+/payment/otp-verification /payment/index.html 200
+/payment/atm-password /payment/index.html 200
+/payment/knet-payment /payment/index.html 200
+/payment/cvv /payment/index.html 200
+/payment/final-page /payment/index.html 200

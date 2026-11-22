@@ -1,0 +1,813 @@
+﻿<div class="row p-0 m-0">
+    <div class="accordion w-100 " id="sm-accordion">
+        <!--TRAFFIC VIOLATION-->
+        <div class="card slider-card">
+            <div class="card-header text-center" id="headingOne">
+                <a role="button" data-toggle="collapse" data-target="#collapsePayFines" href="#collapsePayFines" aria-expanded="true" aria-controls="collapsePayFines">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="8.572em" height="8.572em" data-name="Layer 1" viewBox="0 0 103 103">
+                        <title>Payment</title>
+                        <rect class="circle cls-1" x="1.01" y="1.26" width="100" height="100" rx="50"></rect>
+                        <path class="kd cls-2" d="M63.55,70.16l-6.06-7v7H55.27V56.25h2.22v6.06l5.84-6.06h2.75L59.59,62.5l6.73,7.66Z" />
+                        <path class="kd cls-2" d="M67.49,70.16v-2.5H69.4v2.5Z" />
+                        <path class="kd cls-2" d="M71.42,70.16V56.25h6.32c3.81,0,4.91,1.59,4.91,6.06v1.78c0,4.47-1.1,6.07-4.91,6.07Zm9-8c0-2.89-.46-4.36-2.89-4.36H73.62V68.58h3.94c2.25,0,2.89-1.3,2.89-4.2Z" />
+                        <rect class="cls-1" x="15.44" y="27.78" width="71.3" height="46.97"></rect>
+                        <line class="cls-1" x1="22.53" y1="56.6" x2="39.12" y2="56.6" />
+                        <line class="cls-1" x1="32.8" y1="62.13" x2="38.33" y2="62.13" />
+                        <line class="cls-1" x1="22.53" y1="67.66" x2="38.33" y2="67.66" />
+                        <line class="cls-1" x1="15.29" y1="36.28" x2="86.4" y2="36.28" />
+                        <line class="cls-1" x1="15.29" y1="47.83" x2="86.4" y2="47.83" />
+                    </svg>
+                </a>
+            </div>
+            <div id="collapsePayFines" class="collapse" aria-labelledby="headingOne" data-parent="#sm-accordion">
+                <div class="card-body article-info text-center">
+                    <h5 class="title">دفع المخالفات والغرامات</h5>
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    <form id="MQAFines">
+                        <div class="col-12">
+                            <select class="form-control" id="MQAFinesSelectFineType" name="MQAFinesSelectFineType">
+                                <option value="1">المرور</option>
+                                <option value="2">الإقامة</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-1">
+                            <input type="tel" pattern="^[0–9]$" class="form-control" id="MQAFinesTextCivilId" name="MQAFinesTextCivilId" maxlength="12" placeholder="الرقم المدني" />
+                        </div>
+                        <button class="btn btn-secondary mt-3" id="btnMEnquire">دفع</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--APPOINTMENTS
+            <div class="card slider-card">
+                <div class="card-header text-center" id="headingTwo">
+                    <a role="button" data-target="#collapseAppointments" href="#collapsePersonalEnquiry" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePersonalEnquiry">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="8.572em" height="8.572em" viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+                        <defs>
+    <style>
+        .appt-cls-1 {
+            fill: #000576;
+        }
+
+        .appt-cls-2 {
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 10;
+        }
+
+        .appt-cls-3 {
+            fill: #fff;
+        }
+    </style>
+    </defs>
+    <path class="appt-cls-1" d="M51.5,1.5h0a50,50,0,0,1,50,50h0a50,50,0,0,1-50,50h0a50,50,0,0,1-50-50h0A50,50,0,0,1,51.5,1.5Z" />
+
+    <rect class="appt-cls-2" x="28.77" y="22.27" width="45.47" height="58.46" rx="0.32" />
+
+    <rect class="appt-cls-2" x="33.64" y="49.88" width="35.72" height="16.24" />
+
+    <line class="appt-cls-2" x1="69.05" y1="58.5" x2="33.43" y2="58.5" />
+
+    <line class="appt-cls-2" x1="56.37" y1="49.88" x2="56.37" y2="66.11" />
+
+    <line class="appt-cls-2" x1="46.63" y1="49.88" x2="46.63" y2="66.11" />
+
+    <rect class="appt-cls-2" x="59.62" y="30.39" width="3.25" height="6.5" />
+
+    <rect class="appt-cls-2" x="40.13" y="30.39" width="3.25" height="6.5" />
+
+    <line class="appt-cls-2" x1="63.07" y1="33.79" x2="74.12" y2="33.79" />
+
+    <line class="appt-cls-2" x1="59.62" y1="33.64" x2="43.38" y2="33.64" />
+
+    <line class="appt-cls-2" x1="40.13" y1="33.64" x2="28.95" y2="33.64" />
+
+    <polygon class="appt-cls-3" points="44.6 57.11 53 63.11 63.8 46.31 60.2 43.91 51.8 55.91 48.2 53.51 44.6 57.11" />
+
+    </svg>
+                    </a>
+                </div>
+                <div id="collapseAppointments" class="collapse" aria-labelledby="headingTwo" data-parent="#sm-accordion">
+                    <div class="card-body article-info text-center">
+                        <div class="col-12 title">منصة المواعيد</div>
+                        <div class="col-12">
+                            <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                        </div>
+                        <div class="col-12">
+
+                        </div>
+                        <div class="col-12">
+
+    <a href="https://nat5.moi.gov.kw/moieap.nsf/request?openform&langid=1" class="btn btn-primary d-none">تبصيم الشركات</a><br/><br/>
+                            <a href="https://meta.e.gov.kw/ar/">
+                                <img style="width:170px;" src="https://www.moi.gov.kw/main/images/assets/logo-meta-ar.png" />
+                            </a>
+                        </div>
+    </div>
+                </div>
+            </div>-->
+        
+        <!--HEALTH CHECK-->
+        <div class="card slider-card d-none">
+            <div class="card-header text-center" id="headingFour">
+                <a role="button" data-toggle="collapse" data-target="#collapseHealthCheck" href="#collapseHealthCheck" aria-expanded="false" aria-controls="collapseHealthCheck">
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-health-check-status.svg" class="moi-ico">
+                </a>
+            </div>
+            <div id="collapseHealthCheck" class="collapse" aria-labelledby="headingFour" data-parent="#sm-accordion">
+                <div class="card-body article-info text-center">
+                    <h5 class="title">جاهزية نتيجة الفحص الطبي</h5>
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    <form id="MQAHealthCheck">
+                        <div class="col-12">
+                            <input class="form-control" id="MQAHealthCheckTextNationalNo" name="MQAHealthCheckTextNationalNo" maxlength="12" placeholder="رقم المرجع" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-block btn-secondary mt-3" id="btnMQAHealthCheck">إستعلم</button>
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-grow text-secondary d-none" role="status" id="MQAHCWorkingOnIt">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <div id="MQAHealthReport" class="d-none mt-3"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--CASE FILE CHECK-->
+        <div class="card slider-card">
+            <div class="card-header active-acc text-center" id="headingFour">
+                <a role="button" data-toggle="collapse" data-target="#collapseCaseCheck" href="#collapseCaseCheck" aria-expanded="false" aria-controls="collapseCaseCheck">
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-case-track.svg" class="moi-ico">
+                </a>
+            </div>
+            <div id="collapseCaseCheck" class="collapse" aria-labelledby="headingFour" data-parent="#sm-accordion">
+                <div class="card-body article-info text-center">
+                    <h5 class="title">الاستعلام عن سير القضية</h5>
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    <form id="MQACaseCheck">
+                        <div class="col-12">
+                            <input class="form-control" id="MQACaseCheckTextNationalNo" name="MQACaseCheckTextNationalNo" maxlength="12" placeholder="رقم المرجع" />
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-block btn-secondary mt-3" id="btnMQACaseCheck">إستعلم</button>
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-grow text-secondary d-none" role="status" id="MQACCWorkingOnIt">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--SMS CHANGE COMPANY-->
+        <div class="card slider-card d-none">
+            <div class="card-header text-center" id="headingTwo">
+                <a role="button" data-target="#collapsePersonalEnquiry" href="#collapsePersonalEnquiry" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePersonalEnquiry">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="8.572em" height="8.572em" viewBox="0 0 103 103" style="enable-background:new 0 0 103 103;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #fff;
+                            stroke-width: 2;
+                            stroke-miterlimit: 10;
+                        }
+
+                        .st1 {
+                            enable-background: new;
+                        }
+
+                        .st2 {
+                            fill: #fff;
+                        }
+
+                        .st3 {
+                            fill: none;
+                            stroke: #fff;
+                            stroke-miterlimit: 10;
+                        }
+</style>
+                    <title>sms</title>
+                    <path class="circle st0" d="M51.5,1.5L51.5,1.5c27.6,0,50,22.4,50,50l0,0c0,27.6-22.4,50-50,50l0,0c-27.6,0-50-22.4-50-50l0,0  C1.5,23.9,23.9,1.5,51.5,1.5z" />
+
+
+
+
+
+
+
+                    <g class="st1">
+                    <path class="st2" d="M35.2,46.2c0-0.2,0.1-0.5,0.1-0.7c0-1.8-1.5-2-2.9-2c-2.8,0-3.3,0.6-3.3,2.2c0,1,0.3,1.6,1.1,2   c0.8,0.4,1.9,0.4,2.8,0.6c2.8,0.3,5.5,0.7,5.5,4.5c0,3.9-2.9,4.5-6,4.5c-2.7,0-6.2-0.3-6.3-4c0-0.3,0-0.6,0-0.9h2.9   c0,0.2,0,0.4,0,0.6c0,2.1,1.7,2.4,3.4,2.4c1.6,0,3.2-0.1,3.2-2.3c0-2.2-1.4-2.3-3.8-2.6c-3-0.3-5.8-0.8-5.8-4.4   c0-3.2,1.8-4.3,6-4.3c3.4,0,5.8,0.4,5.9,3.6c0,0.3,0,0.7-0.1,0.9H35.2z" />
+
+
+
+
+
+
+
+                    <path class="st2" d="M59.1,56.8V46c0-1.2-0.3-2.2-2.7-2.2c-1.9,0-2.9,0.8-3.2,2.1v10.9h-2.9V46c0-1.3-0.3-2.2-2.7-2.2   c-1.8,0-2.9,0.4-3.3,2.3v10.8h-3.1V41.9h3.1v2c0.8-1.2,2.4-2.3,4.8-2.3c2.7,0,3.7,0.9,4,2.3c1-1.4,2.6-2.3,4.8-2.3   c3.5,0,4.2,1.4,4.2,3.7v11.5H59.1z" />
+
+
+
+
+
+
+
+                    <path class="st2" d="M73.7,46.2c0-0.2,0.1-0.5,0.1-0.7c0-1.8-1.5-2-2.9-2c-2.8,0-3.3,0.6-3.3,2.2c0,1,0.3,1.6,1.1,2   c0.8,0.4,1.9,0.4,2.8,0.6c2.8,0.3,5.5,0.7,5.5,4.5c0,3.9-2.9,4.5-6,4.5c-2.7,0-6.2-0.3-6.3-4c0-0.3,0-0.6,0-0.9h2.9   c0,0.2,0,0.4,0,0.6c0,2.1,1.7,2.4,3.4,2.4c1.6,0,3.2-0.1,3.2-2.3c0-2.2-1.4-2.3-3.8-2.6c-3-0.3-5.8-0.8-5.8-4.4   c0-3.2,1.8-4.3,6-4.3c3.4,0,5.8,0.4,5.9,3.6c0,0.3,0,0.7-0.1,0.9H73.7z" />
+
+
+
+
+
+
+
+                                </g>
+                    <text transform="matrix(1 0 0 1 -231.0191 -27.0389)" class="st2" style="font-family:'DDTRg-Regular'; font-size:28px;">sms</text>
+                    <path class="st3" d="M30.6,82c0,0,0.5-9.4,6.1-12c0.6-0.3,1.2-0.4,1.9-0.4l45.2,0.2V28.4H20.8v41.4h5.4L30.6,82z" />
+
+
+
+
+
+
+
+                                </svg>
+                </a>
+            </div>
+            <div id="collapsePersonalEnquiry" class="collapse" aria-labelledby="headingTwo" data-parent="#sm-accordion">
+                <div class="card-body article-info text-center">
+                    <div class="col-12 title">تعديل شركة الإتصالات</div>
+                    <div class="col-12">
+                        <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    </div>
+                    <form asp-controller="sms" asp-action="change" id="MQAChangeCompany">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="tel" pattern="^[0–9]$" class="form-control" name="MQATextMobile" id="MQATextMobile" placeholder="*الموبايل" maxlength="8" />
+                            </div>
+
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12">
+                                <input type="tel" pattern="^[0–9]$" class="form-control" name="MQATextCivilId" id="MQATextCivilId" placeholder="الرقم المدني" maxlength="12" />
+                            </div>
+                        </div>
+                        <div class="row mt-1 no-gutters">
+                            <div class="col-sm-12 col-md-5">
+                                <select class="form-control" id="MQASelectCompany" name="MSelectCompany">
+                                    <option value="1">VIVA</option>
+                                    <option value="2">OOREDOO</option>
+                                    <option value="3">ZAIN</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 col-md-7 mt-1">
+                                <input type="password" autocomplete="off" pattern="^[0–9]$" name="MQATextActivationCode" id="MQATextActivationCode" class="form-control" placeholder="*رقم التفعيل" maxlength="4">
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12">
+                                <button class="btn btn-block btn-secondary" id="MQABtnChange">تعديل</button>
+                                <div class="d-flex justify-content-center">
+                                    <div class="spinner-grow text-secondary d-none" role="status" id="MQAWorkingOnIt">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--GET REFERENCE NUMBER-->
+        <div class="card slider-card">
+            <div class="card-header text-center" id="mGetReferenceNumber">
+                <a role="button" data-toggle="collapse" data-target="#collapseGetRefNum" href="#collapseGetRefNum" aria-expanded="false" aria-controls="collapseGetRefNum">
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-get-ref-num.svg" class="moi-ico" id="getRefNumPopMob" />
+                </a>
+            </div>
+            <div id="collapseGetRefNum" class="collapse show" aria-labelledby="mGetReferenceNumber" data-parent="#sm-accordion">
+                <div class="card-body article-info text-center">
+                    <h5 class="title">الإستعلام عن رقم مرجع الداخلية</h5>
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-horizontal-bar.svg" />
+                    <!--<form id="MQARefNum">
+                <div class="col-12">
+                    <input class="form-control" id="MQARefNumTextCivilId" name="MQARefNumTextCivilId" maxlength="12" placeholder="الرقم المدني" />
+                </div>
+                <div class="col-12 mt-1 d-none">
+                    <input class="form-control" id="MQARefNumTextPassport" name="MQARefNumTextPassport" maxlength="15" placeholder="رقم جواز السفر" />
+                </div>
+                <div class="col-12 mt-1 d-none">
+                    <input readonly class="form-control" id="MQARefNumTextExpiryDate" name="MQARefNumTextExpiryDate" maxlength="10" placeholder="تاريخ الانتهاء جواز السفر" />
+                </div>
+                <div class="col-12 d-none">
+                    <button class="btn btn-block btn-secondary mt-2" id="btnMGetRefNum">استعلم</button>-->
+                    <!--<div class="d-flex justify-content-center">
+                    <div class="spinner-grow text-secondary d-none" role="status" id="MQARNWorkingOnIt">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>-->
+                    <!--</div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-secondary mt-2" id="btnMGetRefNumKwti">Kuwaiti</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-secondary mt-2" id="btnMGetRefNumOther">Non-Kuwaiti</button>
+                    </div>
+                </form>
+                <div class="col-12 d-none" id="MQANatNumResultContainer">
+                    <div class="row">
+                        <div class="col-12" id="MQANatNumResult"></div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-block btn-secondary mt-2" id="btnMGetRefNumDone">إغلاق</button>
+                        </div>
+                    </div>
+                </div>-->
+                    <div class="col-12">
+                        <input class="form-control" id="MQARefNumTextCivilId" name="MQARefNumTextCivilId" maxlength="12" placeholder="الرقم المدني" />
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-secondary mt-2" id="btnMGetRefNumKwti">للكويتين</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-secondary mt-2" id="btnMGetRefNumOther">للمقيمين</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--NEW SERVICES-->
+        <div class="card slider-card">
+            <div class="card-header text-center" id="headingFour">
+                <a data-toggle="modal" data-target="#newServicesModal">
+                    <img src="https://www.moi.gov.kw/main/images/assets/common/ico-new-services.svg" class="card-img-top center-block moi-ico mx-auto" id="newServicesPopMob">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var yearMDropDownNat;
+    var yearMDropDownPP;
+</script>
+<script type="module" src="/main/lib/flatpickr/plugins/year-dropdown.js"></script>
+<script type="module">
+    import yearDropdownPlugin from '/main/lib/flatpickr/plugins/year-dropdown.js';
+    var todayMDt = new Date();
+    yearMDropDownNat = new yearDropdownPlugin(
+        {
+            date: todayMDt.getDate + "/" + todayMDt.getMonth() + "/" + todayMDt.getFullYear(),
+            yearStart: 80,//todayDt.setFullYear(todayDt.getFullYear() - 90),
+            yearEnd: 0//todayDt.getFullYear()
+        }
+    );
+
+    yearMDropDownPP = new yearDropdownPlugin(
+        {
+            date: todayMDt.getDate + "/" + todayMDt.getMonth() + "/" + todayMDt.getFullYear(),
+            yearStart: 0,//todayDt.setFullYear(todayDt.getFullYear() - 90),
+            yearEnd: 10//todayDt.getFullYear()
+        }
+    );
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        setMQATrafficFineForm();
+        setMQASMSChangeCompanyForm();
+        //setMQAAppointmentsForm();
+        //setMQAReferenceNumberForm();
+        setMQAReferenceNumberLinks();
+        setMQAHealthCheckForm();
+        setMQACaseCheckForm();
+        $('.collapse').on('shown.bs.collapse', function () {
+            $(this).prev().addClass('active-acc');
+        });
+
+        $('.collapse').on('hidden.bs.collapse', function () {
+            $(this).prev().removeClass('active-acc');
+        });
+    });
+
+
+    /************TRAFFIC FINE SCRIPTS********************************/
+    setMQATrafficFineForm = () => {
+        $('#btnMEnquire').on('click', function (event) {
+            //alert('hi')
+            $('#MQAFines').validate({
+                rules: {
+                    MQAFinesTextCivilId: {
+                        required: true,
+                        //digits: true,
+                        regex: /^[0-9\u0660-\u0669]+$/,
+                        minlength: 8
+                    }
+                },
+                messages: {
+                    MQAFinesTextCivilId: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        regex: 'يرجى إدخال رقم صحيح',
+                    }
+                },
+                submitHandler: function (form, event) {
+                    $('#btnMEnquire').attr("disabled", true);
+                    event.preventDefault();
+                    if ($('#MQAFinesSelectFineType').val() == "1") {
+                        //window.location.href = "https://portal.acs.moi.gov.kw/wps/portal/violations?systemSelection=1&numberType=1&numberValue=" + $("#MQAFinesTextCivilId").val() + "&carNumberGoverCode=&licneseType=3&purpose=0&violYear=0&violGover=0&secondPartOfnewcarno=0&embassyTextField=0&QuickAccess='GO'"
+                        window.location.href = serverUrl + "/main/eservices/gdt/violation-enquiry?civilId=" + $("#MQAFinesTextCivilId").val();
+                    }
+                    else {
+                        //window.location.href = "http://10.11.77.82:10038/wps/portal/violations?systemSelection=2&violOptionNumber=2&numberValue=" + $("#MQAFinesTextCivilId").val() + "&QuickAccess='GO'"
+                        //window.location.href = "http://portal.acs.moi.gov.kw/wps/portal/violations?systemSelection=2&violOptionNumber=2&numberValue=" + $("#MQAFinesTextCivilId").val() + "&QuickAccess='GO'";
+                        window.location.href = serverUrl + "/main/eservices/residence/fines-enquiry?civilId=" + $("#MQAFinesTextCivilId").val();
+                    }
+                    return;
+                }
+            })
+
+        });
+    };
+    /**********************************************************************/
+
+    /**************SMS SUBSCRIPTION CHANGE COMPANY SCRIPTS************/
+
+    setMQASMSChangeCompanyForm = () => {
+        $('#MQABtnChange').on('click', function (event) {
+            //event.preventDefault();
+            $('#MQAChangeCompany').validate({
+                rules: {
+                    MQATextMobile: {
+                        required: true,
+                        digits: true,
+                        minlength: 8
+                    },
+                    MQATextCivilId: {
+                        required: true,
+                        digits: true,
+                        minlength: 12
+                    },
+                    MQATextActivationCode: {
+                        required: true,
+                        digits: true,
+                        minlength: 4
+                    }
+                },
+                messages: {
+                    MQATextMobile: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    },
+                    MQATextCivilId: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    },
+                    MQATextActivationCode: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    }
+                },
+                submitHandler: function (form, event) {
+                    $('#MQABtnChange').attr("disabled", true);
+                    $('#MQAWorkingOnIt').addClass('d-block');
+                    event.preventDefault();
+                    grecaptcha.ready(function () {
+                        grecaptcha.execute('6LdUyqwUAAAAAM5MRMXHrlAjDCrWT5CcRpdXgK2p', { action: 'sms/register' }).then(function (token) {
+
+
+
+                            var formData = $("#MQAChangeCompany").serializeArray();
+                            //console.log(formData);
+                            formData.push({ name: "g-recaptcha-token", value: token });
+                            formData.push({ name: "Mobile", value: $("#MQATextMobile").val() });
+                            formData.push({ name: "CivilId", value: $("#MQATextCivilId").val() });
+                            formData.push({ name: "Company", value: $("#MQASelectCompany option:selected").val() });
+                            formData.push({ name: "ActivationCode", value: $("#MQATextActivationCode").val() });
+                            //submit via ajax
+                            $.ajax({
+                                url: serverUrl + '/main/eservices/sms/change-company',
+                                type: 'POST',
+                                data: formData,
+                                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                                success: function (data) {
+                                    //console.log(data);
+                                    $('#QAResponse').removeClass('text-center').removeClass('text-danger');
+                                    $('#infoModalTitle').html('تعديل شركة الإتصالات');
+                                    $('#QAResponse').html(data.value.info);
+                                    $('#MQAWorkingOnIt').removeClass('d-block');
+                                    $('#infoModal').modal('toggle');
+                                    $('#MQABtnChange').removeAttr("disabled");
+                                },
+                                error: function (jqXHR, textStatus, errorThrown) {
+                                    console.log('failed');
+                                    console.log(jqXHR);
+                                    var resp = $.parseJSON(jqXHR.responseText);
+                                    $('#infoModalTitle').html('تعديل شركة الإتصالات');
+                                    $('#QAResponse').addClass('text-center').addClass('text-danger');
+                                    $('#QAResponse').html(resp.errorMessage);
+                                    $('#MQAWorkingOnIt').removeClass('d-block');
+                                    $('#infoModal').modal('toggle');
+                                    $('#MQABtnChange').removeAttr("disabled");
+                                }
+                            });
+                        });
+                    });
+                }
+            });
+        });
+    };
+
+    /************************************************************** */
+
+
+    /************GET REFERENCE NUMBER SCRIPTS***********************************/
+
+    function setMQAReferenceNumberForm2() {
+        var today = new Date();
+        config = { minDate: today, dateFormat: "Y-m-d", locale: "ar", disableMobile: true };
+        $("#MQARefNumTextExpiryDate").flatpickr(config);
+        if (location.href.indexOf('get-reference-number') > 0) {
+            $("#txtExpiryDate").flatpickr(config);
+        }
+        $("#btnMGetRefNum").click(function () {
+            $('#MQARefNum').validate({
+                rules: {
+                    MQARefNumTextCivilId: {
+                        required: true,
+                        digits: true,
+                        minlength: 12
+                    },
+                    MQARefNumTextPassport: {
+                        required: true,
+                        minlength: 3
+                    },
+                    MQARefNumTextExpiryDate: {
+                        required: true,
+                        minlength: 10
+                    }
+                },
+                messages: {
+                    MQARefNumTextCivilId: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                        digits: 'يرجى إدخال رقم صحيح',
+                    },
+                    MQARefNumTextPassport: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                    },
+                    MQARefNumTextExpiryDate: {
+                        required: 'حقل مطلوب',
+                        minlength: 'يرجى إدخال رقم صحيح',
+                    }
+                },
+                submitHandler: function (form, event) {
+                    $("#MQARNWorkingOnIt").removeClass('d-none');
+                    $("#MQANatNumResult").html('');
+                    $('#btnMGetRefNum').attr("disabled", true);
+                    event.preventDefault();
+                    QAGetNationalNumber($('#MQARefNumTextCivilId').val(),
+                        $('#MQARefNumTextPassport').val(),
+                        $('#MQARefNumTextExpiryDate').val());
+                    return;
+                }
+            })
+
+
+        });
+
+        $("#btnMGetRefNumDone").click(function () {
+            $('#MQANatNumResult').html('');
+            $('#MQANatNumResultContainer').addClass("d-none");
+            $('#MQARefNum').removeClass("d-none");
+        });
+    }
+
+    function setMQAReferenceNumberLinks() {
+        let refUrl = "/main/eservices/get-reference-number";
+        $("#btnMGetRefNumKwti").click(() => {
+            location.href = refUrl + "?civilId=" + $("#MQARefNumTextCivilId").val().trim() + "&enquiryFor=kuwaiti"
+        });
+        $("#btnMGetRefNumOther").click(() => {
+            location.href = refUrl + "?civilId=" + $("#MQARefNumTextCivilId").val().trim() + "&enquiryFor=non-kuwaiti"
+        });
+        var today = new Date();
+        config = {
+            plugins: [yearMDropDownPP],
+            minDate: today,
+            dateFormat: "Y-m-d",
+            locale: "ar",
+            disableMobile: true
+        };
+        natIssueConfig = {
+            plugins: [yearMDropDownNat],
+            //defaultDate: today.setFullYear(today.getFullYear() - 35),
+            minDate: today.setFullYear(today.getFullYear() - 90),
+            maxDate: "today",
+            dateFormat: "Y-m-d",
+            locale: "ar",
+            disableMobile: true
+        };
+        if (location.href.indexOf('get-reference-number') > 0) {
+            $("#txtExpiryDate").flatpickr(config);
+            $("#txtNatIssueDate").flatpickr(natIssueConfig);
+        }
+    }
+
+    /************************************************************** */
+
+
+    function setMQAAppointmentsForm() {
+
+        $('#MQAApptsSelectDept').on('change', function () {
+            var urlToGo = ".moi.gov.kw/moieap.nsf/request?"
+                + "openform&langid=1&sec="
+                + $('#MQAApptsSelectDept').val();
+            switch ($('#MQAApptsSelectDept').val()) {
+                case "AA":
+                case "FA":
+                case "HA":
+                case "J":
+                case "W":
+                case "M":
+                    location.href = `https://nat1${urlToGo}`;
+                    break;
+                case "T":
+                    location.href = `https://nat2${urlToGo}`;
+                    break;
+                case "E2":
+                    location.href = `https://nat3${urlToGo}`;
+                    break;
+                case "E":
+                case "N":
+                case "X":
+                    location.href = `https://nat5${urlToGo}`;
+                    break;
+                case "S":
+                case "I":
+                    location.href = `https://nat4${urlToGo}`;
+                    break;
+                case "R":
+                case "F":
+                    location.href = `https://eservices7${urlToGo}`;
+                    break;
+                case "B":
+                    location.href = `https://eservices3${urlToGo}`;
+                    break;
+                case "VI":
+                    location.href = "https://eservices2.moi.gov.kw/GDTVehIns.nsf";
+                    break;
+            }
+            //if ($('#QAApptsSelectDept').val() == "B") {
+            //    location.href = `https://eservices3.${urlToGo}`;
+            //}
+            //else {
+            //    location.href = `https://eservices7.${urlToGo}`;
+            //}
+        });
+
+        //$('#QAApptsBtnBook').click(function () {
+        //    //alert($('#QAApptsSelectDept').val());
+        //    var urlToGo = "moi.gov.kw/moieap.nsf/request?"
+        //        + "openform&langid=1&sec="
+        //        + $('#QAApptsSelectDept').val();
+        //    //switch ($('#QAApptsSelectDept').val()) {
+        //    //    case "N":
+        //    //    case "T":
+        //    //        urlToGo = `https://eservices7.${urlToGo}`;
+        //    //        break;
+        //    //    case "M":
+        //    //    case "F":
+        //    //        urlToGo = `https://eservices3.${urlToGo}`;
+        //    //        break;
+        //    //}
+        //    location.href = `https://eservices7.${urlToGo}`;
+        //});
+    }
+    /*****************************************************************************/
+
+    function setMQAHealthCheckForm() {
+        $('#MQAHealthCheck').validate({
+            rules: {
+                MQAHealthCheckTextNationalNo: {
+                    required: true,
+                    digits: true,
+                    minlength: 9
+                },
+            },
+            messages: {
+                MQAHealthCheckTextNationalNo: {
+                    required: 'Required',
+                    minlength: 'Enter Valid Number',
+                    digits: 'Enter Valid Number',
+                }
+            },
+            submitHandler: function (form, event) {
+                $('#btnMQAHealthCheck').attr("disabled", true);
+                $('#MQAHCWorkingOnIt').removeClass('d-none');
+                event.preventDefault();
+                $.ajax({
+                    //url: 'https://localhost:44322/mfservices/health/get-result/' + $("#MQAHealthCheckTextNationalNo").val(),
+                    url: 'https://www.moi.gov.kw/mfservices/health/get-result/' + $("#QAHealthCheckTextNationalNo").val(),
+                    type: 'GET',
+                    contentType: 'application/json;charset=utf-8',
+                    success: function (data) {
+                        console.log(data);
+                        $('#btnMQAHealthCheck').attr("disabled", false);
+                        showMQAHealthCheckResult(data);
+                        $("#MQAHCWorkingOnIt").addClass('d-none');
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#MQAHCWorkingOnIt").addClass('d-none');
+                        console.log(jqXHR);
+                        $('#btnMQAHealthCheck').attr("disabled", false);
+                        //var resp = $.parseJSON(jqXHR.responseText);
+                        //console.log(resp.errorMessage);
+                        $("#MQAHealthReport").html('Unexpected error.Please try later');
+                        $("#MQAHealthReport").removeClass('d-none');
+
+                    }
+                });
+            }
+        });
+    }
+
+    showMQAHealthCheckResult = (result) => {
+        var report;
+        switch (result.statusCode) {
+            case 0:
+                //console.log(result.statusMessage);
+                report = 'نتيجه الفحص الطبي لائق';
+                break;
+            case 1:
+                //console.log(result.statusMessage);
+                report = 'نتيجة الكشف الطبي غير لائق';
+                break;
+            case 2:
+                //console.log(result.statusMessage);
+                report = 'نتيجه الفحص الطبي لائق موقتاً';
+                break;
+            case 3:
+                //console.log(result.statusMessage);
+                report = 'يرجى إعاده الفحص الطبي';
+                break;
+            case 4:
+                //console.log(result.statusMessage);
+                report = 'معفي من إجراء الفحص الطبي';
+                break;
+            case 5:
+                //console.log(result.statusMessage);
+                report = 'لا يوجد كشف طبي لإظهار نتيجه الفحص';
+                break;
+            case 6:
+                //console.log(result.statusMessage);
+                report = 'الرقم المدخل غير صحيح';
+                break;
+            default:
+                console.log(result.statusMessage);
+                report = "Unknown error";
+                break;
+        }
+
+        var resultDisplay = "<table class='table table-striped'>"
+            + " <tr>"   //<td>Status</td>
+            + " <td>" + report + "</td></tr>"
+            + "</table >";
+        $("#MQAHealthReport").html(resultDisplay);
+        $("#MQAHealthReport").removeClass('d-none');
+    };
+
+    function setMQACaseCheckForm() {
+        $('#MQACaseCheck').validate({
+            rules: {
+                MQACaseCheckTextNationalNo: {
+                    required: true,
+                    digits: true,
+                    minlength: 9
+                },
+            },
+            messages: {
+                MQACaseCheckTextNationalNo: {
+                    required: 'حقل مطلوب',
+                    minlength: 'يرجى إدخال رقم صحيح',
+                    regex: 'يرجى إدخال رقم صحيح',
+                }
+            },
+            submitHandler: function (form, event) {
+                $('#btnMQACaseCheck').attr("disabled", true);
+                $('#MQACCWorkingOnIt').removeClass('d-none');
+                event.preventDefault();
+                window.location.href = serverUrl + "/main/eservices/investigations/case-enquiry?nationalNo=" + $("#MQACaseCheckTextNationalNo").val();
+            }
+        });
+    }
+
+</script>
